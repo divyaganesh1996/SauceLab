@@ -11,7 +11,7 @@ public class BaseClass {
 	public static void openURL() throws InterruptedException 
 	{
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito");
+		options.addArguments("--incognito");//this is for the pop up that appears when opening in other window other than incognito
 		driver = new ChromeDriver(options);
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
